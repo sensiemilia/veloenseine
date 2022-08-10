@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Vélo</title>
+    <meta
+      name="description"
+      content="decouvrir la Seine St Denis a velo, ou velo en velo de location pour faire des ballades en plein coeur de la Seine St denis dans les parc, ou chemin près de chez vous, ou faire du velo en seine st denis ?"
+      <meta
+      charset="UTF-8"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap"
+      rel="stylesheet"
+      link
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="#" class="logo"><img src="assets/img/logo.svg" alt="logo" /></a>
+        <div class="nav-links">
+          <ul>
+            <li class="active"><a href="#">Accueil</a></li>
+            <li><a href="#">Vélo</a></li>
+            <li><a href="#">Parcours</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <img src="assets/img/burger.png" alt="menu burger" class="menuburger" />
+      </nav>
+    </header>
+
+    <section>
+      <hgroup>
+        <h1>Velo<span id="en">En</span><span id="seine">Seine</span></h1>
+        <h2>
+          Location & découverte à vélo proche de chez vous en Seine saintr denis
+        </h2>
+      </hgroup>
+
+      <a href="">
+        <figure>
+          <img src="assets/img/velo.png" alt="velo en seine" id="slide" />
+        </figure>
+      </a>
+    </section>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+  <script>
+    const menuburger = document.querySelector(".menuburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuburger.addEventListener("click", () => {
+      navLinks.classList.toggle("mobile-menu");
+    });
+  </script>
+</html>
